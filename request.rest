@@ -1,0 +1,24 @@
+GET http://localhost:8080/articles
+
+###
+POST http://localhost:8080/articles/add
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and Prison",
+    "article":"We dont know",
+    "author":"J.K. Rollings"
+}
+
+###
+DELETE http://localhost:8080/articles/62849c4d22c9d766a6d610b3
+
+###
+PUT http://localhost:8080/articles/update/62849c4d22c9d766a6d610b3
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and Garbage",
+    "article":"We dont know",
+    "author":"J.K. Rollings"
+}
